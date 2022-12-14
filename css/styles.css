@@ -56,7 +56,7 @@ body {
 }
 .header-wrapper > .container > .header-contact-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -90,6 +90,8 @@ body {
 .navigation-list > li > a:focus {
     color: var(--blue-text);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list li a {
     color: var(--light-grey);
@@ -101,13 +103,19 @@ body {
 .header-contact-list > li > a:hover,
 .header-contact-list > li > a:focus {
     color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list > li > a:hover,
 .header-contact-list > li > a:focus > svg {
     fill: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list li a:hover > svg {
     fill: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list svg {
     fill: var(--light-grey);
@@ -130,6 +138,9 @@ body {
 }
 .main-bg {
     background-image: url(../img/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--footer-grey);
 }
 .dark-bg {
     background-color: var(--footer-grey);
@@ -194,6 +205,8 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list {
     list-style: none;
@@ -211,6 +224,8 @@ body {
 .contact-item:hover,
 .contact-item:focus {
     color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .articles-list span {
@@ -251,12 +266,32 @@ body {
     font-size: 36px;
     text-align: center;
 }
-.job-list {
-    list-style: none;
-    gap: 30px;
-    white-space: pre-wrap;
+.jobs-layout {
+    width: 370px;
+    height: 294px;
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
 }
+.thumb {
+    position: relative;
+}
+.thumb > .job-label {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    bottom: 0;
+    width: 370px;
+    text-align: center;
+    padding: 27px 0;
+}
+
 .team {
     background-color: #f5f4fa;
 }
@@ -297,10 +332,14 @@ body {
 .team-social > li > a:hover,
 .team-social > li > a:focus {
     background-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social > li > a:hover > svg,
 .team-social > li > a:focus > svg {
     fill: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients h2 {
@@ -324,6 +363,8 @@ body {
 .clients-list > li:hover,
 .clients-list > li:focus {
     border-color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
     fill: #afb1b8;
@@ -331,6 +372,8 @@ body {
 .clients-list > li:hover > .client-icon,
 .clients-list > li:focus > .client-icon {
     fill: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-section-list {
@@ -355,6 +398,8 @@ body {
 .img-item:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .img-info {
     padding: 30px 0;
@@ -424,6 +469,8 @@ body {
 .footer-contact-item:hover,
 .footer-contact-item:focus {
     color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-underline {
     text-decoration: underline;
@@ -457,10 +504,14 @@ body {
 .social-footer > li > a:hover,
 .social-footer > li > a:focus {
     background-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer > li > a:hover > svg,
 .social-footer > li > a:focus > svg {
     fill: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address {
