@@ -30,7 +30,7 @@
                     >
                     <ul class="navigation-list">
                         <li>
-                            <a href="#">Agencja</a>
+                            <a class="link-active" href="#">Agencja </a>
                         </li>
                         <li>
                             <a href="portfolio.html">Portfolio</a>
@@ -69,7 +69,7 @@
             <section class="section main-bg service">
                 <div class="container">
                     <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                    <button type="button">Zamów usługę</button>
+                    <button type="button" data-modal-open>Zamów usługę</button>
                 </div>
             </section>
             <!-- Czym się zajmujemy -->
@@ -550,5 +550,14 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <div class="modal-content">
+                    <button type="button"><svg>
+                        
+                    </svg></button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
