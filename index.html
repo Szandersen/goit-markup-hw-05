@@ -139,7 +139,7 @@
                 <div class="jobs container">
                     <h2>Czym się zajmujemy</h2>
                     <div class="jobs-layout">
-                        <div class="thumb">
+                        <div class="job-img">
                             <img
                                 src="img/box1.jpg"
                                 alt="Tworzenie oprogramowania dla firm"
@@ -148,7 +148,7 @@
                             />
                             <p class="job-label">Aplikacje komputerowe</p>
                         </div>
-                        <div class="thumb">
+                        <div class="job-img">
                             <img
                                 src="img/box2.jpg"
                                 alt="Projektowanie interfejsu"
@@ -157,7 +157,7 @@
                             />
                             <p class="job-label">Aplikacje mobilne</p>
                         </div>
-                        <div class="thumb">
+                        <div class="job-img">
                             <img
                                 src="img/box3.jpg"
                                 alt="Ostylowanie projektu"
@@ -550,14 +550,15 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop is-hidden">
+
+        <div class="backdrop is-hidden" data modal>
             <div class="modal">
                 <div class="modal-content">
-                    <button type="button"><svg>
-                        
-                    </svg></button>
-                </div>
+                <button type="button" class="close-btn" data-modal-close>
+                    X
+                </button>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
