@@ -557,21 +557,18 @@ address {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 528px;
     min-height: 581px;
     background-color: var(--white-background);
-    transform: translateY(0%);
-    transition: transform 3000ms ease;
+    transition: transform 1000ms ease;
 }
 
-.modal-content {
-    position: relative;
-}
 .close-btn {
     position: absolute;
     top: 8px;
@@ -590,8 +587,8 @@ address {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: transform 1000ms ease 1000ms;
+    transition: opacity ease 2s, visibility ease 2s;
 }
 .is-hidden .modal {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
 }
