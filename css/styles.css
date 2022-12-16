@@ -62,6 +62,7 @@ body {
 .link-active {
     position: relative;
     display: block;
+    color: var(--blue-text);
 }
 .link-active::after {
     content: '';
