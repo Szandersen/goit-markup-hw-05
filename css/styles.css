@@ -59,20 +59,7 @@ body {
     gap: 30px;
     align-items: center;
 }
-.link-active {
-    position: relative;
-    display: block;
-    color: var(--blue-text);
-}
-.link-active::after {
-    content: '';
-    position: absolute;
-    top: 44px;
-    left: 0;
-    width: 54px;
-    height: 4px;
-    background-color: var(--blue-text);
-}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -90,8 +77,23 @@ body {
     max-width: 1600px;
     max-height: 80px;
 }
+.link-active {
+    position: relative;
+    display: block;
+    color: var(--blue-text);
+}
+.link-active::after {
+    content: '';
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 54px;
+    height: 4px;
+    background-color: var(--blue-text);
+}
 
-.navigation-list > li > a {
+.menu-link {
+    position: relative;
     color: var(--grey-background);
     text-decoration: none;
     font-weight: 500;
@@ -99,6 +101,17 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.menu-link:hover::after,
+.menu-link:focus::after {
+    content: '';
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 54px;
+    height: 4px;
+    background-color: var(--blue-text);
+}
+
 .navigation-list > li > a:hover,
 .navigation-list > li > a:focus {
     color: var(--blue-text);
